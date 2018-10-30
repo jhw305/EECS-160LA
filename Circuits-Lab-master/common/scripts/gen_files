@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# TODO Add error checking
+
+fname=$1
+tex_ext=.tex
+
+content_fname=$fname$tex_ext
+wrap_fname=$fname\_wrap$tex_ext
+preamble_fname=../preamble.tex
+makefile_fname=Makefile
+
+# Create files
+touch $content_fname
+touch $wrap_fname
+touch $makefile_fname
+
+# Wrap file contents
+echo "\\documentclass{article}" >> $wrap_fname
+echo "\\input{$preamble_fname}" >> $wrap_fname
+echo "\\begin{document}" >> $wrap_fname
+echo "\\input{$content_fname}" >> $wrap_fname
+echo "\\end{document}" >> $wrap_fname
+
+# Makefile contents
+echo "LATEX=pdflatex" >> $makefile_fname
+echo "BUILD=\$(LATEX) $wrap_fname" >> $makefile_fname
+echo "" >> $makefile_fname
+echo "build: $content_fname $wrap_fname" >> $makefile_fname
+echo "	\$(BUILD)" >> $makefile_fname
+echo "	\$(BUILD)" >> $makefile_fname

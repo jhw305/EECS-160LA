@@ -1,0 +1,50 @@
+#!/usr/bin/python
+
+import gen_cover_page
+import gen_main
+import gen_files
+import common
+import argparse
+import os
+
+def usage( ) :
+	usage = ""
+#	usage +=  "azide" + common.NEWLINE 
+#	usage +=  "------------" + common.NEWLINE 
+	usage +=  "Used to generate the scaffolding for a report." + common.NEWLINE 
+#	usage +=  "Mandatory arguments: " + common.NEWLINE 
+#	usage +=  "	--report (report_name) :: sets the report name" + common.NEWLINE 
+#	usage +=  "	--course (course_name) :: sets the course name" + common.NEWLINE 
+#	usage +=  "	--authors (list of author names) :: sets the author names" + common.NEWLINE 
+#	usage +=  "	--sections (list of section names) :: sets the section names for the report" + common.NEWLINE 
+	usage +=  "Example usage: " + common.NEWLINE 
+	usage +=  "gen_cover_page.py --report \"Nirvana Unplugged\" --course \"EECS 170B\" --authors \"Kurt Cobain\" \"Dave Grohl\" \"Krist Novoselic\" --sections \"About a Girl\" \"Jesus Don't Want Me For a Sunbeam\" \"Something in the Way\"" + common.NEWLINE 
+	return usage
+
+if __name__ == "__main__" :
+	# TODO Convert all the code in this repo to using argparse lib
+	# TODO Run help if no arguments passed
+	arg_parser = argparse.ArgumentParser( description = usage( ) )
+	arg_parser.add_argument( "--report" , type = str , help = "Name of the report" , required = True )
+	arg_parser.add_argument( "--course" , type = str , help = "Name of the course" , required = True )
+	arg_parser.add_argument( "--authors" , type = str , help = "Authors of the report" , nargs = '+' , required = True )
+	arg_parser.add_argument( "--sections" , type = str , help = "Sections of the report" , nargs = '+' , required = True )
+	args = arg_parser.parse_args( )
+
+	report_name = args.report
+	course_name = args.course
+	authors = args.authors
+	sections = args.sections
+
+	# Generate all the sections
+	for section in sections :
+		gen_files.gen_section_dir( section )
+	# TODO Check for no name conflicts
+	# Generate misc. directories
+	os.makedirs( "images" )
+	os.makedirs( "tables" )
+	os.makedirs( "data" )
+	# Generate cover page
+	gen_cover_page.gen_cover_page_files( report_name , course_name , authors )
+	# Generate main files (main.tex, preamble.tex, Makefile, etc.)
+	gen_main.gen_main_files( sections )
