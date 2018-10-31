@@ -1,0 +1,83 @@
+The transfer function of the motor-driver system is given by equation (\ref{eq:mdtf}).
+
+\begin{equation}
+	\label{eq:mdtf}
+	\frac{ V_{out}(s) }{ V_{in}(s) } = \frac{ C_1 }{ C_2 s + 1 }
+\end{equation}
+
+From equation (\ref{eq:mdtf}), one can solve for $V_{out}(t)$ in terms of $V_{in}(t)$:
+
+
+\begin{equation}
+	\label{eq:solve_for_vout_part1}
+	\frac{ V_{out}(s) }{ V_{in}(s) } = \frac{ C_1 }{ C_2 s + 1 }
+	\rightarrow V_{out}(s) = \frac{ C_1 V_{in}(s) }{ C_2 s + 1 } \\
+	= \frac{ C_1 }{ C_2 } \frac{ V_{in}(s) }{ s + \frac{ 1 }{ C_2 } } \\
+	= \frac{ C_1 }{ C_2 } [\frac{ V_{in}( s - \frac{ 1 }{ C_2 } ) }{ s }]|_{ s \rightarrow s + \frac{ 1 }{ C_2 } }
+\end{equation}
+
+Apply the inverse Laplace transform to acquire $V_{out}(t)$ from $V_{out}(s)$.
+
+\begin{equation}
+	\label{eq:solve_for_vout_part2}
+	V_{out}(t) = \frac{ C_1 }{ C_2 } e^{ -\frac{ t }{ C_2 } } \mathcal{ L }^{ -1 } \{ \frac{ V_{in}( s - \frac{ 1 }{ C_2 } ) }{ s } \} \\
+	= \frac{ C_1 }{ C_2 } e^{ -\frac{ t }{ C_2 } } \int_{0}^{t} \mathcal{ L }^{ -1 } \{ V_{in}( s - \frac{ 1 }{ C_2 } ) \} dt' \\
+	= \frac{ C_1 }{ C_2 } e^{ -\frac{ t }{ C_2 } } \int_{0}^{t} e^{ \frac{ t' }{ C_2 } } V_{in}( t' )dt'
+\end{equation}
+
+Substitute $C_1 = \frac{K}{B}$ and $C_2 = \frac{J}{B}$ to acquire the final expression:
+
+\begin{equation}
+	\label{eq:final_vout}
+	V_{out}(t) = \frac{K}{J} e^{ -\frac{Bt}{J} } \int_{0}^{t} e^{ \frac{Bt'}{J} } V_{in}(t') dt'
+\end{equation}
+
+% Steady state value in general form
+
+The steady-state value is the value of $V_{out}(t)$ as $t$ becomes large.
+
+\begin{equation}
+	\label{eq:steady_state_gen}
+	V_{out,ss} = \lim_{t\to\infty} \frac{K}{J} e^{ -\frac{Bt}{J} } \int_{0}^{t} e^{ \frac{Bt'}{J} } V_{in}(t') dt'
+\end{equation}
+
+% Equation for step response
+
+In this particular experiment, $V_{in}(t) = V_{in}1(t)$.
+The step response can then be determined for this family of reference voltages.
+
+\begin{equation}
+	\label{eq:final_vout_step}
+	V_{out}(t) = \frac{K}{J} e^{ -\frac{Bt}{J} } \int_{0}^{t} e^{ \frac{Bt'}{J} } V_{in}1(t') dt'
+	= \frac{K}{J} e^{ -\frac{Bt}{J} } \int_{0}^{t} e^{ \frac{Bt'}{J} } V_{in} dt'
+	= \frac{K}{J} e^{ -\frac{Bt}{J} } V_{in} \int_{0}^{t} e^{ \frac{Bt'}{J} } dt'
+	= \frac{K}{J} e^{ -\frac{Bt}{J} } V_{in} \frac{J}{B} ( e^{ \frac{Bt}{J} } - 1 )
+	= \frac{K}{B} V_{in} ( 1 - e^{ -\frac{Bt}{J} } )
+\end{equation}
+
+So, the step response is given by:
+
+\begin{equation}
+	\label{eq:final_vout_step_eq}
+	V_{in}(t) = \frac{K}{B} V_{in} ( 1 - e^{ -\frac{t}{(\frac{J}{B})} } ) = C_1 V_{in} ( 1 - e^{ -\frac{ t }{ C_2 } } )
+\end{equation}
+
+% Steady state for step response
+
+The steady state response can be determined by taking the limit in equation (\ref{eq:steady_state_gen}).
+
+\begin{equation}
+	\label{eq:steady_state_step}
+	V_{in}(t) = \frac{K}{B} V_{in} = C_1 V_{in}
+\end{equation}
+
+% How we got time constant
+
+The time constant is determined by observing when the output attains $(1-e^{-1})$ times its steady state value.
+The time at which this occurs is known as the time constant.
+By inspection, equation (\ref{eq:final_vout_step_eq}) implies that this occurs at $t = C_2 = \frac{J}{B}$.
+
+\begin{equation}
+	\label{eq:tau}
+	\tau = C_2 = \frac{J}{B}
+\end{equation}

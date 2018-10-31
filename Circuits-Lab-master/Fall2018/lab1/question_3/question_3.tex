@@ -1,0 +1,37 @@
+If the motor and the driver are ideal, $B = 0$.
+Because $C_1 = \frac{K}{B}$ and $C_2 = \frac{J}{B}$, $C_1$ and $C_2$ become undefined in this case.
+$C_1$ can be interpreted as the steady state value for $V_{in} = 1$\si{\volt}.
+$C_2$ is the time constant.
+
+Substitute $B = 0$ into equation (\ref{eq:final_vout}).
+
+\begin{equation}
+	\label{eq:ideal_vout}
+	V_{out}(t) = \frac{K}{J} \int_{0}^{t} V_{in}(t')dt'
+\end{equation}
+
+Assume that the input is the step function $V_{in}(t) = V_{in}1(t)$.
+
+\begin{equation}
+	\label{eq:ideal_vout_step}
+	V_{out}(t) = \frac{K V_{in}}{J} t
+\end{equation}
+
+The steady state value grows without bound.
+Therefore, the time constant grows without bound as well.
+So, neither is a constant in this case.
+Therefore, neither $C_1$ nor $C_2$ is a constant.
+
+Neither $C_1$ nor $C_2$ are observed to be constant in the experiment.
+The $C_1$ values are similar in the $4$\si{\volt} and $4.5$\si{\volt} reference voltage cases.
+The $C_1$ values may not necessarily be similar since the dynamics of the motor may not be linear, which explains why $K$ varies.
+The model assumes that the motor torque depends linearly on the input current.
+These linear dynamics do not hold in practice.
+Therefore, the $K$ will not be constant.
+If $B$ is assumed to be constant, then $\frac{K}{B} = C_1$ is not constant.
+
+The moment of inertia $J$ of the rotor is unlikely to vary with the reference voltage.
+Thus, nonlinearities in the damping behavior of the motor must cause $C_2$ to not be constant.
+Damping may depend on other higher-order terms than angular velocity, such as angular acceleration or angular jerk.
+As a result, $B$ may not be constant, leading to $C_2 = \frac{J}{B}$ not being constant.
+If $B$ is not constant, then it must vary with the reference voltage differently from $K$ so that $C_1$ is still not constant.
