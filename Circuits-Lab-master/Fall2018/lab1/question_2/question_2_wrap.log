@@ -2,8 +2,8 @@ This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**question_3_wrap.tex
-(./question_3_wrap.tex
+**question_2_wrap.tex
+(./question_2_wrap.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -395,8 +395,8 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \c@csvcol=\count135
 \csv@out=\write3
 )
-(./question_3_wrap.aux)
-\openout1 = `question_3_wrap.aux'.
+(./question_2_wrap.aux)
+\openout1 = `question_2_wrap.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -491,36 +491,208 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count143
- (./question_3.tex
+ (./question_2.tex
+<../images/scope_10.png, id=1, 1027.84pt x 832.10875pt>
+File: ../images/scope_10.png Graphic file (type png)
 
-LaTeX Warning: Reference `eq:final_vout' on page 1 undefined on input line 6.
+<use ../images/scope_10.png>
+Package pdftex.def Info: ../images/scope_10.png used on input line 6.
+(pdftex.def)             Requested size: 770.87811pt x 624.08003pt.
 
-) [1
+Overfull \hbox (425.87811pt too wide) in paragraph at lines 6--7
+ [][] 
+ []
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./question_3_wrap.aux)
+
+LaTeX Warning: Float too large for page by 98.02448pt on input line 9.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../images/scope_10.png (
+PNG copy)>] <../images/scope_11.png, id=10, 1027.84pt x 832.10875pt>
+File: ../images/scope_11.png Graphic file (type png)
+
+<use ../images/scope_11.png>
+Package pdftex.def Info: ../images/scope_11.png used on input line 17.
+(pdftex.def)             Requested size: 770.87811pt x 624.08003pt.
+
+Overfull \hbox (425.87811pt too wide) in paragraph at lines 17--18
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 98.02448pt on input line 20.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2 <../images/scope_11.png (PNG copy)>]
+<../images/scope_12.png, id=14, 1027.84pt x 832.10875pt>
+File: ../images/scope_12.png Graphic file (type png)
+
+<use ../images/scope_12.png>
+Package pdftex.def Info: ../images/scope_12.png used on input line 28.
+(pdftex.def)             Requested size: 770.87811pt x 624.08003pt.
+
+Overfull \hbox (425.87811pt too wide) in paragraph at lines 28--29
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 98.02448pt on input line 31.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3 <../images/scope_12.png (PNG copy)>]
+<../images/scope_6.png, id=18, 1027.84pt x 832.10875pt>
+File: ../images/scope_6.png Graphic file (type png)
+
+<use ../images/scope_6.png>
+Package pdftex.def Info: ../images/scope_6.png used on input line 40.
+(pdftex.def)             Requested size: 770.87811pt x 624.08003pt.
+
+Overfull \hbox (425.87811pt too wide) in paragraph at lines 40--41
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 98.02448pt on input line 43.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4 <../images/scope_6.png (PNG copy)>]
+<../images/scope_7.png, id=22, 1027.84pt x 832.10875pt>
+File: ../images/scope_7.png Graphic file (type png)
+
+<use ../images/scope_7.png>
+Package pdftex.def Info: ../images/scope_7.png used on input line 51.
+(pdftex.def)             Requested size: 770.87811pt x 624.08003pt.
+
+Overfull \hbox (425.87811pt too wide) in paragraph at lines 51--52
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 98.02448pt on input line 54.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5 <../images/scope_7.png (PNG copy)>]
+<../images/scope_8.png, id=26, 1027.84pt x 832.10875pt>
+File: ../images/scope_8.png Graphic file (type png)
+
+<use ../images/scope_8.png>
+Package pdftex.def Info: ../images/scope_8.png used on input line 62.
+(pdftex.def)             Requested size: 770.87811pt x 624.08003pt.
+
+Overfull \hbox (425.87811pt too wide) in paragraph at lines 62--63
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 98.02448pt on input line 65.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 <../images/scope_8.png (PNG copy)>]
+<../images/scope_14.png, id=30, 1027.84pt x 832.10875pt>
+File: ../images/scope_14.png Graphic file (type png)
+
+<use ../images/scope_14.png>
+Package pdftex.def Info: ../images/scope_14.png used on input line 75.
+(pdftex.def)             Requested size: 770.87811pt x 624.08003pt.
+
+Overfull \hbox (425.87811pt too wide) in paragraph at lines 75--76
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 98.02448pt on input line 78.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7 <../images/scope_14.png (PNG copy)>]
+<../images/scope_15.png, id=35, 1027.84pt x 832.10875pt>
+File: ../images/scope_15.png Graphic file (type png)
+
+<use ../images/scope_15.png>
+Package pdftex.def Info: ../images/scope_15.png used on input line 86.
+(pdftex.def)             Requested size: 770.87811pt x 624.08003pt.
+
+Overfull \hbox (425.87811pt too wide) in paragraph at lines 86--87
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 98.02448pt on input line 89.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8 <../images/scope_15.png (PNG copy)>]
+<../images/scope_16.png, id=39, 1027.84pt x 832.10875pt>
+File: ../images/scope_16.png Graphic file (type png)
+
+<use ../images/scope_16.png>
+Package pdftex.def Info: ../images/scope_16.png used on input line 97.
+(pdftex.def)             Requested size: 770.87811pt x 624.08003pt.
+
+Overfull \hbox (425.87811pt too wide) in paragraph at lines 97--98
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 98.02448pt on input line 100.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9 <../images/scope_16.png (PNG copy)>]
+
+LaTeX Warning: Reference `eq:steady_state_step' on page 10 undefined on input l
+ine 104.
+
+) [10
+
+
+
+
+
+
+
+
+
+
+] (./question_2_wrap.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 12060 strings out of 493029
- 260327 string characters out of 6136233
- 260853 words of memory out of 5000000
- 15513 multiletter control sequences out of 15000+600000
+ 12136 strings out of 493029
+ 261919 string characters out of 6136233
+ 257927 words of memory out of 5000000
+ 15575 multiletter control sequences out of 15000+600000
  7056 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,4n,46p,10411b,739s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,7n,46p,10411b,904s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/t
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy7.pfb>
-Output written on question_3_wrap.pdf (1 page, 69985 bytes).
+Output written on question_2_wrap.pdf (10 pages, 343531 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 74 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
