@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  1 NOV 2018 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.30)  1 NOV 2018 14:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -495,6 +495,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 LaTeX Warning: Reference `eq:final_vout' on page 1 undefined on input line 6.
 
+
+LaTeX Warning: Reference `eq:solve_for_steady_state' on page 1 undefined on inp
+ut line 39.
+
+
+LaTeX Warning: Reference `eq:tau' on page 1 undefined on input line 39.
+
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./question_3_wrap.aux)
@@ -503,10 +510,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 12060 strings out of 493029
- 260327 string characters out of 6136233
+ 12062 strings out of 493029
+ 260362 string characters out of 6136233
  260853 words of memory out of 5000000
- 15513 multiletter control sequences out of 15000+600000
+ 15515 multiletter control sequences out of 15000+600000
  7056 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,4n,46p,10411b,739s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -517,7 +524,7 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy7.pfb>
-Output written on question_3_wrap.pdf (1 page, 69985 bytes).
+Output written on question_3_wrap.pdf (1 page, 70691 bytes).
 PDF statistics:
  36 PDF objects out of 1000 (max. 8388607)
  25 compressed objects within 1 object stream
